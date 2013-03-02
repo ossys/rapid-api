@@ -5,6 +5,7 @@ import java.util.List;
 import com.purlogic.ae.api.enums.AttributeEncryptionType;
 import com.purlogic.ae.api.enums.AttributeType;
 import com.purlogic.ae.api.enums.LanguageType;
+import com.purlogic.ae.api.enums.ValidationType;
 
 public interface AttributeInterface {
 	
@@ -24,5 +25,6 @@ public interface AttributeInterface {
 	public List<EnumInterface> getEnums();
 	public AttributeType getType(LanguageType platform);
 	public AttributeEncryptionType getEncryptionType();
+	public ValidationType getValidationType();
 
 }

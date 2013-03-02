@@ -4,6 +4,7 @@ import java.util.List;
 
 import com.purlogic.ae.api.enums.AttributeType;
 import com.purlogic.ae.api.enums.RelationshipType;
+import com.purlogic.ae.api.enums.ValidationType;
 
 public interface BusinessObjectInterface {
 	
@@ -13,6 +14,9 @@ public interface BusinessObjectInterface {
 	public boolean isAuditable();
 	public boolean isAtomic();
 	public boolean isPersistent();
+	public boolean hasAttribute(AttributeInterface a);
+	public boolean hasAttribute(String name);
+	public AttributeInterface getAttribute(AttributeInterface a);
 	public AttributeInterface getAttribute(String name);
 	public List<RelationshipInterface> getRelationships();
 	public List<KeyInterface> getKeys();
@@ -29,5 +33,11 @@ public interface BusinessObjectInterface {
 	public BusinessObjectInterface getBusinessObjectByName(String name);
 	public List<AttributeInterface> getAllAttributes();
 	public boolean hasAttributeOfType(AttributeType type);
+	public boolean hasRequiredAttribute();
+	public boolean hasUniqueAttribute();
+	public boolean attributeIsUnique(AttributeInterface a);
+	public boolean hasAttributeOfValidationType(ValidationType type);
+	public boolean hasAttributeWithMinMaxLengthSet();
+	public boolean hasEncryptedAttribute();
 	
 }
