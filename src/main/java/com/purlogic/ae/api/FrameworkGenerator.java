@@ -15,5 +15,9 @@ public interface FrameworkGenerator {
 	public String getDbLibRoot();
 	public String getControllersRoot();
 	public String getRouterRoot();
+	public String getModelNamespace(String namespace);
+	public String getEntityNamespace(String namespace);
+	public String getDBNamespace(String namespace);
+	public String getUtilsNamespace(String namespace);
 	
 }
