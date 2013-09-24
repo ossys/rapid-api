@@ -19,6 +19,8 @@ public interface BusinessObjectInterface {
 	public AttributeInterface getAttribute(AttributeInterface a);
 	public AttributeInterface getAttribute(String name);
 	public List<RelationshipInterface> getRelationships();
+	public RelationshipInterface getRelationship(int index);
+	public RelationshipInterface getNextRelationship();
 	public List<KeyInterface> getKeys();
 	public List<KeyInterface> getUniqueKeys();
 	public List<KeyInterface> getForeignKeys();
@@ -26,7 +28,8 @@ public interface BusinessObjectInterface {
 	public boolean relationshipIsRequired(String name);
 	public boolean hasReferrerRelationship(RelationshipType type);
 	public boolean hasReferredRelationship(RelationshipType type);
-	public List<RelationshipInterface> getReferredRelationships(RelationshipType type);
+	public List<PairInterface<BusinessObjectInterface, RelationshipInterface>> getReferredRelationships(RelationshipType type);
+	public List<RelationshipInterface> getReferrerRelationships(RelationshipType type);
 	public List<BusinessObjectInterface> getReferredBusinessObjects(RelationshipType type);
 	public List<BusinessObjectInterface> getReferrerBusinessObjects(RelationshipType type);
 	public RelationshipInterface getReferrerRelationship(BusinessObjectInterface bo, RelationshipType type);
