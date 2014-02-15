@@ -5,5 +5,6 @@ public enum OrmType {
 	HIBERNATE_4,
 	EBEAN,
 	PDO,
-	DOCTRINE
+	DOCTRINE,
+	JPA
 }

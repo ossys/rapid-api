@@ -84,9 +84,9 @@ public class Utils {
 				e.printStackTrace();
 			} finally {
 				try {
-					os.flush();
-					is.close();
-					os.close();
+					if(os != null) { os.flush(); }
+					if(is != null) { is.close(); }
+					if(os != null) { os.close(); }
 				} catch (IOException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
