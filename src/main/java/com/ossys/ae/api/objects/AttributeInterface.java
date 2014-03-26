@@ -20,11 +20,13 @@ public interface AttributeInterface {
 	public long getMinsize();
 	public long getPrecision();
 	public boolean isSigned();
+	public boolean isArray();
 	public String getRegex();
 	public String getEnumReference();
 	public List<EnumInterface> getEnums();
 	public AttributeType getType(LanguageType platform);
 	public AttributeEncryptionType getEncryptionType();
 	public ValidationType getValidationType();
+	public boolean hasAttributes();
 
 }
