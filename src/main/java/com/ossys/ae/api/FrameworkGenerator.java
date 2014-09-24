@@ -19,5 +19,6 @@ public interface FrameworkGenerator {
 	public String getEntityNamespace(String namespace);
 	public String getDBNamespace(String namespace);
 	public String getUtilsNamespace(String namespace);
+	public String getExceptionsNamespace(String namespace);
 	
 }
