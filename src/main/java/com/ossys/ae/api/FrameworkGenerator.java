@@ -6,6 +6,7 @@ public interface FrameworkGenerator {
 	public boolean generateArtifacts();
 	public boolean addResources();
 	public String getRoot();
+	public String getIncludeRoot();
 	public String getModelRoot();
 	public String getEntitiesRoot();
 	public String getExceptionsRoot();

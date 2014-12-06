@@ -6,5 +6,6 @@ public enum LanguageType {
 	C_SHARP,
 	CPP,
 	C,
-	OBJC
+	OBJC,
+	NODE
 }
