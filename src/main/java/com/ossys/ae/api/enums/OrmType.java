@@ -6,5 +6,6 @@ public enum OrmType {
 	EBEAN,
 	PDO,
 	DOCTRINE,
-	JPA
+	JPA,
+	MONGOOSE
 }
