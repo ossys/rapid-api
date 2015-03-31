@@ -5,6 +5,7 @@ public interface FrameworkGenerator {
 	public boolean generateDirectoryStructure();
 	public boolean generateArtifacts();
 	public boolean addResources();
+	public String getDirectory(String name);
 	public String getRoot();
 	public String getIncludeRoot();
 	public String getModelRoot();
