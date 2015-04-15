@@ -10,23 +10,23 @@ import com.ossys.ae.api.enums.ValidationType;
 public interface AttributeInterface {
 	
 	public String getName();
-	public long getMaxByteNum();
+	public Long getMaxByteNum();
 	public String getMaxByteChars();
-	public boolean isRequired();
-	public boolean isPersistent();
+	public Boolean isRequired();
+	public Boolean isPersistent();
 	public String getDefault();
 	public String getComment();
-	public long getMaxsize();
-	public long getMinsize();
-	public long getPrecision();
-	public boolean isSigned();
-	public boolean isArray();
+	public Long getMaxsize();
+	public Long getMinsize();
+	public Long getPrecision();
+	public Boolean isSigned();
+	public Boolean isArray();
 	public String getRegex();
 	public String getEnumReference();
 	public List<EnumInterface> getEnums();
 	public AttributeType getType(LanguageType platform);
 	public AttributeEncryptionType getEncryptionType();
 	public ValidationType getValidationType();
-	public boolean hasAttributes();
+	public Boolean hasAttributes();
 
 }
