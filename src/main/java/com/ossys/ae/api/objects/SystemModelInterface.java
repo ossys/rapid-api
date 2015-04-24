@@ -5,6 +5,7 @@ import java.util.List;
 public interface SystemModelInterface {
 
 	public boolean exists();
+	public String getRootPath();
 	public void parse();
 	public List<DataSourceInterface> getDatasources();
 	public List<ProjectInterface> getProjects();
