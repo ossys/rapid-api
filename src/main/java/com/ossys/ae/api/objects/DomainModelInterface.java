@@ -8,7 +8,6 @@ import com.ossys.ae.api.enums.OrmType;
 
 public interface DomainModelInterface {
 
-	public boolean exists();
 	public String getName();
 	public String getNamespace();
 	public String getDatasourceName();

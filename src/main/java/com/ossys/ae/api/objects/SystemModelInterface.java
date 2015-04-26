@@ -1,12 +1,13 @@
 package com.ossys.ae.api.objects;
 
-import java.io.FileNotFoundException;
 import java.util.List;
 
-public interface SystemModelInterface {
+import com.ossys.ae.api.enums.SystemType;
 
+public interface SystemModelInterface {
+	
 	public String getRootPath();
-	public void parse() throws FileNotFoundException;
+	public SystemType getSystemType();
 	public List<DataSourceInterface> getDatasources();
 	public List<ProjectInterface> getProjects();
 	public DataSourceInterface getDatasource(String name);
