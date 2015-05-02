@@ -6,24 +6,32 @@ public interface FrameworkGenerator {
 	public boolean generateArtifacts();
 	public boolean addResources();
 	
-	@Deprecated
-	public String getDirectory(String name);
 	public String getRoot();
+	
+	public String getSrcRoot();
+	public String getDbSrcRoot();
+	public String getEntitiesSrcRoot();
+	public String getExceptionsSrcRoot();
+	public String getUtilsSrcRoot();
+	public String getDbLibSrcRoot();
+
 	public String getIncludeRoot();
-	public String getModelRoot();
-	public String getEntitiesRoot();
-	public String getExceptionsRoot();
-	public String getUtilsRoot();
-	public String getTestsRoot();
-	public String getDbRoot();
-	public String getDbLibRoot();
+	public String getDbIncludeRoot();
+	public String getEntitiesIncludeRoot();
+	public String getExceptionsIncludeRoot();
+	public String getUtilsIncludeRoot();
+
+	public String getTestRoot();
+	public String getTestSrcRoot();
+	public String getTestIncludeRoot();
+	
 	public String getControllersRoot();
 	public String getRouterRoot();
 	
-	public String getModelNamespace(String namespace);
-	public String getEntityNamespace(String namespace);
-	public String getDBNamespace(String namespace);
-	public String getUtilsNamespace(String namespace);
-	public String getExceptionsNamespace(String namespace);
+	public String getModelNamespace();
+	public String getEntityNamespace();
+	public String getDBNamespace();
+	public String getUtilsNamespace();
+	public String getExceptionsNamespace();
 	
 }
