@@ -7,5 +7,7 @@ public enum LanguageType {
 	CPP,
 	C,
 	OBJC,
-	NODE
+	NODE,
+	SCALA,
+	ERLANG
 }

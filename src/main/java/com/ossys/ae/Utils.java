@@ -36,6 +36,7 @@ public class Utils {
 		boolean success = false;
 		
 		File f = new File(path + System.getProperty("file.separator") + name);
+		boolean exists = f.exists();
 		if(!f.exists() || (f.exists() && overwrite)) {
 			FileWriter out = null;
 			try {

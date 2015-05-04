@@ -9,6 +9,7 @@ public enum DatasourceType {
 	H2,
 	MONGODB1,
 	MONGODB2,
+	MONGODB3,
 	CASSANDRA,
 	HBASE,
 	COUCHDB,
