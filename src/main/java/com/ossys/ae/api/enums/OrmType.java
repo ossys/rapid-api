@@ -7,5 +7,6 @@ public enum OrmType {
 	PDO,
 	DOCTRINE,
 	JPA,
+	SPRING_DATA,
 	MONGOOSE
 }
