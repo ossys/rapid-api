@@ -8,5 +8,10 @@ public enum FrameworkType {
 	ZEND_1,
 	ZEND_2,
 	SYMFONY1,
-	SYMFONY2
+	SYMFONY2,
+	ANDROID,
+	IONIC,
+	ANGULARJS,
+	JQUERY,
+	EXPRESS
 }
