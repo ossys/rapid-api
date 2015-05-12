@@ -5,6 +5,7 @@ public enum FrameworkType {
 	PLAY_2,
 	SPRING_3,
 	SPRING_4,
+	EJB3,
 	ZEND_1,
 	ZEND_2,
 	SYMFONY1,
