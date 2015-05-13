@@ -7,7 +7,9 @@ public enum LanguageType {
 	CPP,
 	C,
 	OBJC,
+	SWIFT,
 	NODE,
 	SCALA,
-	ERLANG
+	ERLANG,
+	COFFEESCRIPT
 }
