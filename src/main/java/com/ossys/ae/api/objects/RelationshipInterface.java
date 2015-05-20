@@ -11,5 +11,6 @@ public interface RelationshipInterface {
 	public RelationshipConstraintType getOnDelete();
 	public RelationshipConstraintType getOnUpdate();
 	public boolean isRequired();
+	public boolean isBidirectional();
 	
 }
