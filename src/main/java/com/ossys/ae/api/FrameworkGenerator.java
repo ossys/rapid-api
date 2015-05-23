@@ -36,5 +36,7 @@ public interface FrameworkGenerator {
 	public String getDBNamespace(DomainModelInterface dm);
 	public String getUtilsNamespace(DomainModelInterface dm);
 	public String getExceptionsNamespace(DomainModelInterface dm);
+	public String getTestsNamespace(DomainModelInterface dm);
+	public String getModelTestsNamespace(DomainModelInterface dm);
 	
 }
