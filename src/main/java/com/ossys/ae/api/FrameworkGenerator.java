@@ -25,9 +25,13 @@ public interface FrameworkGenerator {
 	public String getEntitiesIncludePath(DomainModelInterface dm);
 
 	public String getTestPath(DomainModelInterface dm);
-	public String getModelTestPath(DomainModelInterface dm);
+	public String getModelUnitTestPath(DomainModelInterface dm);
+	public String getModelIntegrationTestPath(DomainModelInterface dm);
+	public String getModelBenchmarkTestPath(DomainModelInterface dm);
 	public String getTestIncludePath(DomainModelInterface dm);
-	public String getModelTestIncludePath(DomainModelInterface dm);
+	public String getModelUnitTestIncludePath(DomainModelInterface dm);
+	public String getModelIntegrationTestIncludePath(DomainModelInterface dm);
+	public String getModelBenchmarkTestIncludePath(DomainModelInterface dm);
 	
 	public String getControllersPath(DomainModelInterface dm);
 	public String getRouterPath(DomainModelInterface dm);
@@ -39,6 +43,8 @@ public interface FrameworkGenerator {
 	public String getUtilsNamespace(DomainModelInterface dm);
 	public String getExceptionsNamespace(DomainModelInterface dm);
 	public String getTestsNamespace(DomainModelInterface dm);
-	public String getModelTestsNamespace(DomainModelInterface dm);
+	public String getModelUnitTestsNamespace(DomainModelInterface dm);
+	public String getModelIntegrationTestsNamespace(DomainModelInterface dm);
+	public String getModelBenchmarkTestsNamespace(DomainModelInterface dm);
 	
 }
