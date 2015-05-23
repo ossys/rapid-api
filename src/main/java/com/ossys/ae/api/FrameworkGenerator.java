@@ -24,7 +24,9 @@ public interface FrameworkGenerator {
 	public String getObjectsIncludePath(DomainModelInterface dm);
 	public String getEntitiesIncludePath(DomainModelInterface dm);
 
+	public String getTestPath(DomainModelInterface dm);
 	public String getModelTestPath(DomainModelInterface dm);
+	public String getTestIncludePath(DomainModelInterface dm);
 	public String getModelTestIncludePath(DomainModelInterface dm);
 	
 	public String getControllersPath(DomainModelInterface dm);
