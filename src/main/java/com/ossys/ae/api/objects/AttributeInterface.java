@@ -21,7 +21,7 @@ public interface AttributeInterface {
 	public Long getPrecision();
 	public Boolean isSigned();
 	public Boolean isArray();
-	public String getRegex();
+	public String getValidator();
 	public String getEnumReference();
 	public List<EnumInterface> getEnums();
 	public AttributeType getType(LanguageType platform);
