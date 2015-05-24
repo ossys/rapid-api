@@ -11,5 +11,7 @@ public enum LanguageType {
 	JAVASCRIPT,
 	SCALA,
 	ERLANG,
-	COFFEESCRIPT
+	COFFEESCRIPT,
+	PYTHON,
+	RUBY
 }

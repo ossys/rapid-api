@@ -7,6 +7,7 @@ import com.ossys.ae.api.enums.BuildtoolType;
 import com.ossys.ae.api.enums.FrameworkType;
 import com.ossys.ae.api.enums.LanguageType;
 import com.ossys.ae.api.enums.OrmType;
+import com.ossys.ae.api.enums.TesterType;
 
 public interface DomainModelInterface {
 
@@ -20,5 +21,6 @@ public interface DomainModelInterface {
 	public FrameworkType getFrameworkType();
 	public OrmType getOrmType();
 	public String getNamespace();
+	public TesterType getTesterType();
 	
 }
