@@ -8,5 +8,7 @@ public enum OrmType {
 	DOCTRINE,
 	JPA,
 	SPRING_DATA,
-	MONGOOSE
+	MONGOOSE,
+	SQLALCHEMY,
+	MORPHIA
 }

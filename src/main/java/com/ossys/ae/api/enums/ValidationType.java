@@ -4,5 +4,6 @@ public enum ValidationType {
 	EMAIL,
 	PAST,
 	FUTURE,
-	CURRENCY
+	CURRENCY,
+	HEX
 }

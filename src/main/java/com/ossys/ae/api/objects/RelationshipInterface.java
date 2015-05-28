@@ -5,8 +5,9 @@ import com.ossys.ae.api.enums.RelationshipType;
 
 public interface RelationshipInterface {
 
-	public String getVerb();
-	public String getReferred();
+	public String getSubjectVerb();
+	public String getObjectVerb();
+	public String getObject();
 	public RelationshipType getType();
 	public RelationshipConstraintType getOnDelete();
 	public RelationshipConstraintType getOnUpdate();
