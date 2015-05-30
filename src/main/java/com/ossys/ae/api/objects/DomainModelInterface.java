@@ -14,7 +14,7 @@ public interface DomainModelInterface {
 	public String getName();
 	public String getDirectoryName();
 	public String getDatasourceName();
-	public DataSourceInterface getDatasource(String name);
+	public DataSourceInterface getDatasource();
 	public List<BusinessObjectInterface> getBusinessObjects();
 	public boolean isConcurrent();
 	public LanguageType getLanguageType();

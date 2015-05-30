@@ -10,6 +10,7 @@ import com.ossys.ae.api.enums.LanguageType;
 public interface ProjectInterface {
 	
 	public String getName();
+	public String getBaseDir();
 	public String getDirectoryName();
 	public BuildtoolType getBuildtoolType();
 	public String getGroupId();
