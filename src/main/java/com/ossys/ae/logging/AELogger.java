@@ -5,7 +5,6 @@ import org.slf4j.LoggerFactory;
 import org.slf4j.Marker;
 
 public class AELogger implements AELoggerInterface {
-	String canonical_name = "";
 	Logger logger = null;
 	
 	boolean info_enabled = false;
@@ -14,8 +13,11 @@ public class AELogger implements AELoggerInterface {
 	boolean error_enabled = false;
 	
 	public AELogger(String canonical_name) {
-		this.canonical_name = canonical_name;
-		this.logger = LoggerFactory.getLogger(this.canonical_name);
+		this.logger = LoggerFactory.getLogger(canonical_name);
+	}
+	
+	public AELogger(Class<?> cls) {
+		this.logger = LoggerFactory.getLogger(cls);
 	}
 	
 	public void enableInfo() {
