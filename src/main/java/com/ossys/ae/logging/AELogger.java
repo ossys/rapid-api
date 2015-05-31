@@ -7,179 +7,108 @@ import org.slf4j.Marker;
 public class AELogger implements AELoggerInterface {
 	Logger logger = null;
 	
-	boolean verbose = false;
-	boolean debug = false;
-	boolean error = false;
-	boolean info = false;
-	boolean trace = false;
-	boolean warn = false;
-	
 	public AELogger(Class<?> cls) {
 		this.logger = LoggerFactory.getLogger(cls);
-	}
-	
-	public void enableVerbose() {
-		this.verbose = true;
-	}
-	
-	public void enableDebug() {
-		this.debug = true;
-	}
-	
-	public void enableError() {
-		this.error = true;
-	}
-	
-	public void enableInfo() {
-		this.info = true;
-	}
-	
-	public void enableTrace() {
-		this.trace = true;
-	}
-	
-	public void enableWarn() {
-		this.warn = true;
 	}
 
 	@Override
 	public void debug(String arg0) {
-		if(this.debug || this.verbose) {
-			logger.debug(arg0);
-		}
+		logger.debug(arg0);
 	}
 
 	@Override
 	public void debug(String arg0, Object arg1) {
-		if(this.debug || this.verbose) {
-			logger.debug(arg0, arg1);
-		}
+		logger.debug(arg0, arg1);
 	}
 
 	@Override
 	public void debug(String arg0, Object... arg1) {
-		if(this.debug || this.verbose) {
-			logger.debug(arg0, arg1);
-		}
+		logger.debug(arg0, arg1);
 	}
 
 	@Override
 	public void debug(String arg0, Throwable arg1) {
-		if(this.debug || this.verbose) {
-			logger.debug(arg0, arg1);
-		}
+		logger.debug(arg0, arg1);
 	}
 
 	@Override
 	public void debug(Marker arg0, String arg1) {
-		if(this.debug || this.verbose) {
-			logger.debug(arg0, arg1);
-		}
+		logger.debug(arg0, arg1);
 	}
 
 	@Override
 	public void debug(String arg0, Object arg1, Object arg2) {
-		if(this.debug || this.verbose) {
-			logger.debug(arg0, arg1, arg2);
-		}
+		logger.debug(arg0, arg1, arg2);
 	}
 
 	@Override
 	public void debug(Marker arg0, String arg1, Object arg2) {
-		if(this.debug || this.verbose) {
-			logger.debug(arg0, arg1, arg2);
-		}
+		logger.debug(arg0, arg1, arg2);
 	}
 
 	@Override
 	public void debug(Marker arg0, String arg1, Object... arg2) {
-		if(this.debug || this.verbose) {
-			logger.debug(arg0, arg1, arg2);
-		}
+		logger.debug(arg0, arg1, arg2);
 	}
 
 	@Override
 	public void debug(Marker arg0, String arg1, Throwable arg2) {
-		if(this.debug || this.verbose) {
-			logger.debug(arg0, arg1, arg2);
-		}
+		logger.debug(arg0, arg1, arg2);
 	}
 
 	@Override
 	public void debug(Marker arg0, String arg1, Object arg2, Object arg3) {
-		if(this.debug || this.verbose) {
-			logger.debug(arg0, arg1, arg2, arg3);
-		}
+		logger.debug(arg0, arg1, arg2, arg3);
 	}
 
 	@Override
 	public void error(String arg0) {
-		if(this.error || this.verbose) {
-			logger.error(arg0);
-		}
+		logger.error(arg0);
 	}
 
 	@Override
 	public void error(String arg0, Object arg1) {
-		if(this.error || this.verbose) {
-			logger.error(arg0, arg1);
-		}
+		logger.error(arg0, arg1);
 	}
 
 	@Override
 	public void error(String arg0, Object... arg1) {
-		if(this.error || this.verbose) {
-			logger.error(arg0, arg1);
-		}
+		logger.error(arg0, arg1);
 	}
 
 	@Override
 	public void error(String arg0, Throwable arg1) {
-		if(this.error || this.verbose) {
-			logger.error(arg0, arg1);
-		}
+		logger.error(arg0, arg1);
 	}
 
 	@Override
 	public void error(Marker arg0, String arg1) {
-		if(this.error || this.verbose) {
-			logger.error(arg0, arg1);
-		}
+		logger.error(arg0, arg1);
 	}
 
 	@Override
 	public void error(String arg0, Object arg1, Object arg2) {
-		if(this.error || this.verbose) {
-			logger.error(arg0, arg1, arg2);
-		}
+		logger.error(arg0, arg1, arg2);
 	}
 
 	@Override
 	public void error(Marker arg0, String arg1, Object arg2) {
-		if(this.error || this.verbose) {
-			logger.error(arg0, arg1, arg2);
-		}
+		logger.error(arg0, arg1, arg2);
 	}
 
 	@Override
 	public void error(Marker arg0, String arg1, Object... arg2) {
-		if(this.error || this.verbose) {
-			logger.error(arg0, arg1, arg2);
-		}
+		logger.error(arg0, arg1, arg2);
 	}
 
 	@Override
 	public void error(Marker arg0, String arg1, Throwable arg2) {
-		if(this.error || this.verbose) {
-			logger.error(arg0, arg1, arg2);
-		}
+		logger.error(arg0, arg1, arg2);
 	}
 
 	@Override
 	public void error(Marker arg0, String arg1, Object arg2, Object arg3) {
-		if(this.error || this.verbose) {
-			logger.error(arg0, arg1, arg2, arg3);
-		}
+		logger.error(arg0, arg1, arg2, arg3);
 	}
 
 	@Override
@@ -189,72 +118,52 @@ public class AELogger implements AELoggerInterface {
 
 	@Override
 	public void info(String arg0) {
-		if(this.info || this.verbose) {
-			logger.info(arg0);
-		}
+		logger.info(arg0);
 	}
 
 	@Override
 	public void info(String arg0, Object arg1) {
-		if(this.info || this.verbose) {
-			logger.info(arg0, arg1);
-		}
+		logger.info(arg0, arg1);
 	}
 
 	@Override
 	public void info(String arg0, Object... arg1) {
-		if(this.info || this.verbose) {
-			logger.info(arg0, arg1);
-		}
+		logger.info(arg0, arg1);
 	}
 
 	@Override
 	public void info(String arg0, Throwable arg1) {
-		if(this.info || this.verbose) {
-			logger.info(arg0, arg1);
-		}
+		logger.info(arg0, arg1);
 	}
 
 	@Override
 	public void info(Marker arg0, String arg1) {
-		if(this.info || this.verbose) {
-			logger.info(arg0, arg1);
-		}
+		logger.info(arg0, arg1);
 	}
 
 	@Override
 	public void info(String arg0, Object arg1, Object arg2) {
-		if(this.info || this.verbose) {
-			logger.info(arg0, arg1, arg2);
-		}
+		logger.info(arg0, arg1, arg2);
 	}
 
 	@Override
 	public void info(Marker arg0, String arg1, Object arg2) {
-		if(this.info || this.verbose) {
-			logger.info(arg0, arg1, arg2);
-		}
+		logger.info(arg0, arg1, arg2);
 	}
 
 	@Override
 	public void info(Marker arg0, String arg1, Object... arg2) {
-		if(this.info || this.verbose) {
-			logger.info(arg0, arg1, arg2);
-		}
+		logger.info(arg0, arg1, arg2);
 	}
 
 	@Override
 	public void info(Marker arg0, String arg1, Throwable arg2) {
-		if(this.info || this.verbose) {
-			logger.info(arg0, arg1, arg2);
-		}
+		logger.info(arg0, arg1, arg2);
 	}
 
 	@Override
 	public void info(Marker arg0, String arg1, Object arg2, Object arg3) {
-		if(this.info || this.verbose) {
-			logger.info(arg0, arg1, arg2, arg3);
-		}
+		logger.info(arg0, arg1, arg2, arg3);
 	}
 
 	@Override
@@ -309,141 +218,101 @@ public class AELogger implements AELoggerInterface {
 
 	@Override
 	public void trace(String arg0) {
-		if(this.trace || this.verbose) {
-			logger.trace(arg0);
-		}
+		logger.trace(arg0);
 	}
 
 	@Override
 	public void trace(String arg0, Object arg1) {
-		if(this.trace || this.verbose) {
-			logger.trace(arg0, arg1);
-		}
+		logger.trace(arg0, arg1);
 	}
 
 	@Override
 	public void trace(String arg0, Object... arg1) {
-		if(this.trace || this.verbose) {
-			logger.trace(arg0, arg1);
-		}
+		logger.trace(arg0, arg1);
 	}
 
 	@Override
 	public void trace(String arg0, Throwable arg1) {
-		if(this.trace || this.verbose) {
-			logger.trace(arg0, arg1);
-		}
+		logger.trace(arg0, arg1);
 	}
 
 	@Override
 	public void trace(Marker arg0, String arg1) {
-		if(this.trace || this.verbose) {
-			logger.trace(arg0, arg1);
-		}
+		logger.trace(arg0, arg1);
 	}
 
 	@Override
 	public void trace(String arg0, Object arg1, Object arg2) {
-		if(this.trace || this.verbose) {
-			logger.trace(arg0, arg1, arg2);
-		}
+		logger.trace(arg0, arg1, arg2);
 	}
 
 	@Override
 	public void trace(Marker arg0, String arg1, Object arg2) {
-		if(this.trace || this.verbose) {
-			logger.trace(arg0, arg1, arg2);
-		}
+		logger.trace(arg0, arg1, arg2);
 	}
 
 	@Override
 	public void trace(Marker arg0, String arg1, Object... arg2) {
-		if(this.trace || this.verbose) {
-			logger.trace(arg0, arg1, arg2);
-		}
+		logger.trace(arg0, arg1, arg2);
 	}
 
 	@Override
 	public void trace(Marker arg0, String arg1, Throwable arg2) {
-		if(this.trace || this.verbose) {
-			logger.trace(arg0, arg1, arg2);
-		}
+		logger.trace(arg0, arg1, arg2);
 	}
 
 	@Override
 	public void trace(Marker arg0, String arg1, Object arg2, Object arg3) {
-		if(this.trace || this.verbose) {
-			logger.trace(arg0, arg1, arg2, arg3);
-		}
+		logger.trace(arg0, arg1, arg2, arg3);
 	}
 
 	@Override
 	public void warn(String arg0) {
-		if(this.warn || this.verbose) {
-			logger.warn(arg0);
-		}
+		logger.warn(arg0);
 	}
 
 	@Override
 	public void warn(String arg0, Object arg1) {
-		if(this.warn || this.verbose) {
-			logger.warn(arg0, arg1);
-		}
+		logger.warn(arg0, arg1);
 	}
 
 	@Override
 	public void warn(String arg0, Object... arg1) {
-		if(this.warn || this.verbose) {
-			logger.warn(arg0, arg1);
-		}
+		logger.warn(arg0, arg1);
 	}
 
 	@Override
 	public void warn(String arg0, Throwable arg1) {
-		if(this.warn || this.verbose) {
-			logger.warn(arg0, arg1);
-		}
+		logger.warn(arg0, arg1);
 	}
 
 	@Override
 	public void warn(Marker arg0, String arg1) {
-		if(this.warn || this.verbose) {
-			logger.warn(arg0, arg1);
-		}
+		logger.warn(arg0, arg1);
 	}
 
 	@Override
 	public void warn(String arg0, Object arg1, Object arg2) {
-		if(this.warn || this.verbose) {
-			logger.warn(arg0, arg1, arg2);
-		}
+		logger.warn(arg0, arg1, arg2);
 	}
 
 	@Override
 	public void warn(Marker arg0, String arg1, Object arg2) {
-		if(this.warn || this.verbose) {
-			logger.warn(arg0, arg1, arg2);
-		}
+		logger.warn(arg0, arg1, arg2);
 	}
 
 	@Override
 	public void warn(Marker arg0, String arg1, Object... arg2) {
-		if(this.warn || this.verbose) {
-			logger.warn(arg0, arg1, arg2);
-		}
+		logger.warn(arg0, arg1, arg2);
 	}
 
 	@Override
 	public void warn(Marker arg0, String arg1, Throwable arg2) {
-		if(this.warn || this.verbose) {
-			logger.warn(arg0, arg1, arg2);
-		}
+		logger.warn(arg0, arg1, arg2);
 	}
 
 	@Override
 	public void warn(Marker arg0, String arg1, Object arg2, Object arg3) {
-		if(this.warn || this.verbose) {
-			logger.warn(arg0, arg1, arg2, arg3);
-		}
+		logger.warn(arg0, arg1, arg2, arg3);
 	}
 }
