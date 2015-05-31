@@ -10,6 +10,10 @@ import ch.qos.logback.classic.spi.ILoggingEvent;
 //http://www.nurkiewicz.com/2011/04/mongodb-and-recording-appenders-for.html
 public class AEConsoleAppender<E> extends OutputStreamAppender<ILoggingEvent> {
 
+	public AEConsoleAppender() {
+		super.setOutputStream(System.out);
+	}
+	
 	@Override
 	public void start() {
 		super.start();
@@ -29,6 +33,7 @@ public class AEConsoleAppender<E> extends OutputStreamAppender<ILoggingEvent> {
 				System.out.println("+++++>>>>>>>>>> GOT DEBUG EVENT: " + event.getMessage() + " <<<<<<<<<<<<+++++++++++");
 				break;
 			case Level.ERROR_INT:
+				super.setOutputStream(System.err);
 				System.out.println("+++++>>>>>>>>>> GOT ERROR EVENT: " + event.getMessage() + " <<<<<<<<<<<<+++++++++++");
 				break;
 			case Level.INFO_INT:

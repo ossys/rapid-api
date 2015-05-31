@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<configuration debug="true">
+<configuration debug="false">
 
   <appender name="DB" class="com.ossys.ae.logging.AEDatabaseAppender">
   </appender>
 
   <appender name="CONSOLE" class="com.ossys.ae.logging.AEConsoleAppender">
-    <!-- encoders are assigned the type
-         ch.qos.logback.classic.encoder.PatternLayoutEncoder by default -->
     <encoder>
       <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
     </encoder>
