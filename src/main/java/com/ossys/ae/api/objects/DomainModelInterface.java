@@ -11,6 +11,7 @@ import com.ossys.ae.api.enums.TesterType;
 
 public interface DomainModelInterface {
 
+	public boolean isValid();
 	public String getName();
 	public String getDirectoryName();
 	public String getDatasourceName();

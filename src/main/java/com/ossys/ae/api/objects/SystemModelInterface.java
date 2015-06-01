@@ -7,6 +7,7 @@ import com.ossys.ae.api.enums.SystemType;
 
 public interface SystemModelInterface {
 	
+	public boolean isValid();
 	public String getRootPath();
 	public SystemType getSystemType();
 	public List<DataSourceInterface> getDatasources();
