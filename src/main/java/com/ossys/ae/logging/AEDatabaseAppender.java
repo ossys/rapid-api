@@ -22,25 +22,18 @@ public class AEDatabaseAppender<E> extends UnsynchronizedAppenderBase<ILoggingEv
 		// Probably better to do bulk insert once events reach a certain threshold from the cache
 		switch(event.getLevel().levelInt) {
 			case Level.ALL_INT:
-				System.out.println("ALL (DB):\t" + event.getMessage());
 				break;
 			case Level.DEBUG_INT:
-				System.out.println("DEBUG (DB):\t" + event.getMessage());
 				break;
 			case Level.ERROR_INT:
-				System.out.println("ERROR (DB):\t" + event.getMessage());
 				break;
 			case Level.INFO_INT:
-				System.out.println("INFO (DB):\t" + event.getMessage());
 				break;
 			case Level.TRACE_INT:
-				System.out.println("TRACE (DB):\t" + event.getMessage());
 				break;
 			case Level.WARN_INT:
-				System.out.println("WARN (DB):\t" + event.getMessage());
 				break;
 			case Level.OFF_INT:
-				System.out.println("OFF (DB):\t" + event.getMessage());
 				break;
 		}
 	}

@@ -27,26 +27,25 @@ public class AEConsoleAppender<E> extends OutputStreamAppender<ILoggingEvent> {
 		// Probably better to do bulk insert once events reach a certain threshold from the cache
 		switch(event.getLevel().levelInt) {
 			case Level.ALL_INT:
-				System.out.println("ALL (CONSOLE):\t" + event.getMessage());
+				System.out.println(event.getMessage());
 				break;
 			case Level.DEBUG_INT:
-				System.out.println("DEBUG (CONSOLE):\t" + event.getMessage());
+				System.out.println(event.getMessage());
 				break;
 			case Level.ERROR_INT:
-				super.setOutputStream(System.err);
-				System.out.println("ERROR (CONSOLE):\t" + event.getMessage());
+				System.out.println(event.getMessage());
 				break;
 			case Level.INFO_INT:
-				System.out.println("INFO (CONSOLE):\t" + event.getMessage());
+				System.out.println(event.getMessage());
 				break;
 			case Level.TRACE_INT:
-				System.out.println("TRACE (CONSOLE):\t" + event.getMessage());
+				System.out.println(event.getMessage());
 				break;
 			case Level.WARN_INT:
-				System.out.println("WARN (CONSOLE):\t" + event.getMessage());
+				System.out.println(event.getMessage());
 				break;
 			case Level.OFF_INT:
-				System.out.println("OFF (CONSOLE):\t" + event.getMessage());
+				System.out.println(event.getMessage());
 				break;
 		}
 	}
