@@ -17,7 +17,7 @@ public class AEConsoleAppender<E> extends OutputStreamAppender<ILoggingEvent> {
 	@Override
 	public void start() {
 		super.start();
-		System.out.println("+++++>>>>>>>>>> IN CONSOLE APPENDER START() <<<<<<<<<<<<+++++++++++");
+		System.out.println("IN CONSOLE APPENDER START()");
 		//Create database connection here
 	}
 	
@@ -54,7 +54,7 @@ public class AEConsoleAppender<E> extends OutputStreamAppender<ILoggingEvent> {
 	public void stop() {
 		//Close database connection here
 		//Probably a good place to bulk insert remaining log events from the cache
-		System.out.println("+++++>>>>>>>>>> IN CONSOLE APPENDER STOP() <<<<<<<<<<<<+++++++++++");
+		System.out.println("IN CONSOLE APPENDER STOP()");
 		super.stop();
 	}
 	

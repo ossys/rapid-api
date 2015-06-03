@@ -10,7 +10,7 @@ public class AEDatabaseAppender<E> extends UnsynchronizedAppenderBase<ILoggingEv
 	@Override
 	public void start() {
 		super.start();
-		System.out.println("+++++>>>>>>>>>> IN DB APPENDER START() <<<<<<<<<<<<+++++++++++");
+		System.out.println("IN DB APPENDER START()");
 		//Create database connection here
 	}
 	
@@ -42,7 +42,7 @@ public class AEDatabaseAppender<E> extends UnsynchronizedAppenderBase<ILoggingEv
 	public void stop() {
 		//Close database connection here
 		//Probably a good place to bulk insert remaining log events from the cache
-		System.out.println("+++++>>>>>>>>>> IN DB APPENDER STOP() <<<<<<<<<<<<+++++++++++");
+		System.out.println("IN DB APPENDER STOP()");
 		super.stop();
 	}
 	
