@@ -12,21 +12,20 @@ public interface AttributeInterface {
 	public String getName();
 	public Long getMaxByteNum();
 	public String getMaxByteChars();
-	public Boolean isRequired();
-	public Boolean isPersistent();
+	public boolean isRequired();
+	public boolean isPersistent();
 	public String getDefault();
 	public String getComment();
 	public Long getMaxsize();
 	public Long getMinsize();
 	public Long getPrecision();
-	public Boolean isSigned();
-	public Boolean isArray();
+	public boolean isSigned();
+	public boolean isArray();
 	public String getValidator();
 	public String getEnumReference();
 	public List<EnumInterface> getEnums();
 	public AttributeType getType(LanguageType platform);
 	public AttributeEncryptionType getEncryptionType();
 	public ValidationType getValidationType();
-	public Boolean hasAttributes();
 
 }
