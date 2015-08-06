@@ -20,5 +20,6 @@ public interface DomainModelInterface {
 	public OrmType getOrmType();
 	public String getNamespace();
 	public TesterType getTesterType();
+	public List<InterfaceModelInterface> getInterfaces();
 	
 }

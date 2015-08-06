@@ -19,5 +19,7 @@ public interface ProjectInterface {
 	public int getLanguageIndex(LanguageType type);
 	public void addDomainModel(DomainModelInterface model);
 	public boolean hasFrameworkType(FrameworkType type);
+	public boolean hasInterfaces();
+	public boolean hasInterfaces(DomainModelInterface dm);
 	
 }

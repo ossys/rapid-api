@@ -35,6 +35,7 @@ public interface FrameworkGenerator {
 	
 	public String getControllersPath(DomainModelInterface dm);
 	public String getRouterPath(DomainModelInterface dm);
+	public String getInterfacePath(DomainModelInterface dm);
 	
 	public String getModelNamespace(DomainModelInterface dm);
 	public String getModelObjectNamespace(DomainModelInterface dm);
