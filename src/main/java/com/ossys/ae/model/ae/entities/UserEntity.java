@@ -1,4 +1,4 @@
-package com.ossys.ae.model.activeengine.entities;
+package com.ossys.ae.model.ae.entities;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,7 +7,7 @@ import org.bson.types.ObjectId;
 import org.mongodb.morphia.annotations.Entity;
 import org.mongodb.morphia.annotations.Id;
 
-import com.ossys.ae.model.activeengine.User;
+import com.ossys.ae.model.ae.User;
 
 @Entity("user")
 public class UserEntity {
@@ -15,10 +15,11 @@ public class UserEntity {
 	@Id
 	protected ObjectId id = null;
 
+	protected String username = "";
 	protected String email = "";
-	protected String first_name = "";
-	protected String middle_name = "";
-	protected String last_name = "";
+	protected String password = "";
+	protected String first_name = null;
+	protected String last_name = null;
 
 	protected static List<User> users = null;
 
@@ -35,16 +36,20 @@ public class UserEntity {
 		return this.id;
 	}
 
+	public String getUsername() {
+		return this.username;
+	}
+
 	public String getEmail() {
 		return this.email;
 	}
 
-	public String getFirstName() {
-		return this.first_name;
+	public String getPassword() {
+		return this.password;
 	}
 
-	public String getMiddleName() {
-		return this.middle_name;
+	public String getFirstName() {
+		return this.first_name;
 	}
 
 	public String getLastName() {

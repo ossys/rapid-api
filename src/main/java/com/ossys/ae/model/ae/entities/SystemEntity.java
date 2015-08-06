@@ -1,4 +1,4 @@
-package com.ossys.ae.model.activeengine.entities;
+package com.ossys.ae.model.ae.entities;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,7 +7,7 @@ import org.bson.types.ObjectId;
 import org.mongodb.morphia.annotations.Entity;
 import org.mongodb.morphia.annotations.Id;
 
-import com.ossys.ae.model.activeengine.System;
+import com.ossys.ae.model.ae.System;
 
 @Entity("system")
 public class SystemEntity {
