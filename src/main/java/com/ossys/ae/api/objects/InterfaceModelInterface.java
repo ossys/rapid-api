@@ -1,5 +1,7 @@
 package com.ossys.ae.api.objects;
 
+import java.util.List;
+
 import com.ossys.ae.api.enums.CharacterSetType;
 import com.ossys.ae.api.enums.InterfaceType;
 import com.ossys.ae.api.enums.ResponseType;
@@ -11,5 +13,6 @@ public interface InterfaceModelInterface {
 	public ResponseType getResponseType();
 	public String getHost();
 	public CharacterSetType getCharacterSet();
+	public List<EndPointInterface> getEndPoints();
 	
 }
