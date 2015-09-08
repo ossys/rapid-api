@@ -13,5 +13,7 @@ public interface RelationshipInterface {
 	public RelationshipConstraintType getOnUpdate();
 	public boolean isRequired();
 	public boolean isBidirectional();
+	public boolean isEmbedded();
+	public boolean allowsMulti();
 	
 }
