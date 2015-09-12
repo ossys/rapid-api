@@ -14,6 +14,8 @@ public interface BusinessObjectInterface {
 	public boolean isAuditable();
 	public boolean isAtomic();
 	public boolean isPersistent();
+	public boolean isEmbedded();
+	public boolean embeds(String name);
 	public boolean hasAttribute(AttributeInterface a);
 	public boolean hasAttribute(String name);
 	public AttributeInterface getAttribute(AttributeInterface a);
