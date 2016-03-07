@@ -11,5 +11,6 @@ public enum OrmType {
 	MONGOOSE,
 	SQLALCHEMY,
 	MORPHIA,
-	SEQUELIZE
+	SEQUELIZE,
+	NANO
 }
