@@ -12,6 +12,7 @@ public enum DatasourceType {
 	CASSANDRA,
 	HBASE,
 	COUCHDB,
+	POUCHDB,
 	DYNAMODB,
 	MSSQL
 }
