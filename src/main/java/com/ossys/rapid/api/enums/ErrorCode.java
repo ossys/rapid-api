@@ -1,0 +1,12 @@
+package com.ossys.rapid.api.enums;
+
+public enum ErrorCode {
+	SUCCESS,						// 0
+	ERROR_SYSTEM_MODEL_VALIDATION_FAILED,
+	ERROR_SYSTEM_FILE_NOT_FOUND,	// 1
+	ERROR_DOMAIN_MODEL_NOT_FOUND,	// 2
+	ERROR_PARSING_MODEL,			// 3
+	ERROR_BUILDTOOL_NULL,			// 4
+	ERROR_FRAMEWORK_NULL,			// 5
+	ERROR_OTHER						// 6
+}

@@ -6,10 +6,10 @@
 		</encoder>
 	</appender>
   
-  <appender name="DB" class="com.ossys.rapd.logging.RapdDatabaseAppender">
+  <appender name="DB" class="com.ossys.rapid.logging.RapidDatabaseAppender">
   </appender>
 
-  <appender name="CONSOLE" class="com.ossys.rapd.logging.RapdConsoleAppender">
+  <appender name="CONSOLE" class="com.ossys.rapid.logging.RapidConsoleAppender">
     <encoder>
       <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
     </encoder>

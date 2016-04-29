@@ -1,0 +1,18 @@
+package com.ossys.rapid.api.enums;
+
+public enum DatasourceType {
+	MYSQL,
+	POSTGRESQL,
+	ORACLE,
+	SQLITE,
+	HSQLDB,
+	H2,
+	MONGODB2,
+	MONGODB3,
+	CASSANDRA,
+	HBASE,
+	COUCHDB,
+	POUCHDB,
+	DYNAMODB,
+	MSSQL
+}
